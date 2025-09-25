@@ -44,6 +44,14 @@ export default function TabLayout() {
         options={{
           title: 'Chats',
           headerTitleAlign: 'left',
+          headerRight: () => (
+            <View style={{ flexDirection: 'row', marginRight: 16 }}>
+              <Feather name="search" size={24} color={Colors[colorScheme ?? 'light'].text}
+                       style={{ marginRight: 16 }} />
+              <Ionicons name="add-circle-outline" size={24} color={Colors[colorScheme ?? 'light'].text}
+                        style={{ marginRight: 16 }} />
+            </View>
+          ),
           tabBarIcon: ({ color }) => <Ionicons name="chatbox" size={24} color={color} />,
         }}
       />
@@ -52,6 +60,14 @@ export default function TabLayout() {
         options={{
           title: 'Open Chat',
           headerTitleAlign: 'left',
+          headerRight: () => (
+            <View style={{ flexDirection: 'row', marginRight: 16 }}>
+              <Feather name="search" size={24} color={Colors[colorScheme ?? 'light'].text}
+                       style={{ marginRight: 16 }} />
+              <Ionicons name="add-circle-outline" size={24} color={Colors[colorScheme ?? 'light'].text}
+                        style={{ marginRight: 16 }} />
+            </View>
+          ),
           tabBarIcon: ({ color }) => <Entypo name="chat" size={24} color={color} />,
         }}
       />

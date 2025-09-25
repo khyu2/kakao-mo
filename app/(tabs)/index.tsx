@@ -105,6 +105,7 @@ export default function IndexScreen() {
         keyExtractor={item => item.id}
         className="flex-1 bg-background"
       />
+
       <Modal
         animationType="slide"
         transparent={true}
